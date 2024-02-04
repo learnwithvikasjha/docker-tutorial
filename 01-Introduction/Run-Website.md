@@ -24,5 +24,5 @@ Let's create a demo website. I am going to use this HTML.
 # Map local directory to docker container's volume
 
 ```
-docker run -d -p 80:80 -v **/path/to/your/local/directory**:/usr/share/nginx/html --name my-web-server nginx
+docker run -d -p 80:80 -v /path/to/your/local/directory:/usr/share/nginx/html --name my-web-server nginx
 ```
